@@ -1,9 +1,9 @@
 import emailjs from '@emailjs/browser';
 
 // EmailJS configuration
-const EMAILJS_SERVICE_ID = 'service_rms_cleaning'; // You'll need to set this up
-const EMAILJS_TEMPLATE_ID = 'template_quote_request'; // You'll need to set this up
-const EMAILJS_PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY'; // You'll need to set this up
+const EMAILJS_SERVICE_ID = 'service_794lcu7'; // You'll need to set this up
+const EMAILJS_TEMPLATE_ID = 'template_4ivpxfc'; // You'll need to set this up
+const EMAILJS_PUBLIC_KEY = 'qFfYvj6YmO0gHbVfq'; // You'll need to set this up
 
 export interface EmailData {
   name: string;

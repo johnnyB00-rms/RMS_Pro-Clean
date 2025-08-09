@@ -6,7 +6,7 @@ interface AppointmentBookingProps {
 
 const AppointmentBooking: React.FC<AppointmentBookingProps> = ({ className = '' }) => {
     // You'll need to replace this with your actual Calendly URL
-    const calendlyUrl = "https://calendly.com/rms-professional-cleaning/property-survey";
+    const calendlyUrl = "https://calendly.com/cherrod-gunner/30min";
 
     const openCalendly = () => {
         // Open Calendly in a new window
