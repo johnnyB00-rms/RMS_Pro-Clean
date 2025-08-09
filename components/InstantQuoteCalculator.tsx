@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SERVICES_DATA } from '../constants.ts';
 import type { QuoteFormData, QuoteCalculation } from '../types.ts';
+import { sendQuoteEmail } from '../services/emailService.ts';
 
 // Add custom CSS for the slider
 const sliderStyles = `
@@ -131,15 +132,32 @@ const InstantQuoteCalculator: React.FC = () => {
         setIsSubmitting(true);
 
         try {
-            // Here you would typically send to your backend API
-            // For now, we'll simulate a successful submission
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            // Send email with quote details
+            const emailData = {
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                company: formData.company,
+                services: formData.services,
+                squareFootage: formData.squareFootage,
+                frequency: formData.frequency,
+                schedule: formData.schedule,
+                additionalNotes: formData.additionalNotes,
+                estimatedWeeklyPrice: quote?.totalWeeklyPrice,
+                estimatedMonthlyPrice: quote?.totalMonthlyPrice
+            };
+
+            const emailSent = await sendQuoteEmail(emailData);
             
-            console.log('Quote submitted:', { ...formData, quote });
-            setSubmitted(true);
+            if (emailSent) {
+                console.log('Quote submitted successfully:', { ...formData, quote });
+                setSubmitted(true);
+            } else {
+                throw new Error('Failed to send email');
+            }
         } catch (error) {
             console.error('Error submitting quote:', error);
-            alert('There was an error submitting your quote. Please try again.');
+            alert('There was an error submitting your quote. Please try again or call us directly at (817) 555-0100.');
         } finally {
             setIsSubmitting(false);
         }

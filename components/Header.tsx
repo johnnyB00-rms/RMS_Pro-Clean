@@ -8,6 +8,7 @@ const NavLinks = () => (
         <NavLink to="/about" className={({ isActive }) => `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-brand-blue-700 text-white' : 'text-white hover:bg-brand-blue-700'}`}>About Us</NavLink>
         <NavLink to="/services" className={({ isActive }) => `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-brand-blue-700 text-white' : 'text-white hover:bg-brand-blue-700'}`}>Services</NavLink>
         <NavLink to="/locations" className={({ isActive }) => `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-brand-blue-700 text-white' : 'text-white hover:bg-brand-blue-700'}`}>Service Areas</NavLink>
+        <NavLink to="/faq" className={({ isActive }) => `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-brand-blue-700 text-white' : 'text-white hover:bg-brand-blue-700'}`}>FAQ</NavLink>
         <NavLink to="/contact" className={({ isActive }) => `px-3 py-2 rounded-md text-sm font-medium ${isActive ? 'bg-brand-blue-700 text-white' : 'text-white hover:bg-brand-blue-700'}`}>Contact</NavLink>
     </>
 );
@@ -25,7 +26,7 @@ export const Header: React.FC = () => {
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-center space-x-4">
                             <NavLinks />
-                             <NavLink to="/contact" className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-brand-green-500 hover:bg-opacity-90 transition-colors">
+                            <NavLink to="/contact" className="ml-4 px-4 py-2 rounded-md text-sm font-medium text-white bg-brand-green-500 hover:bg-opacity-90 transition-colors">
                                 Get a Free Quote
                             </NavLink>
                         </div>

@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { COMPANY_DETAILS } from '../constants.ts';
 import InstantQuoteCalculator from '../components/InstantQuoteCalculator.tsx';
+import AppointmentBooking from '../components/AppointmentBooking.tsx';
+import { sendQuoteEmail } from '../services/emailService.ts';
 
 const ContactPage: React.FC = () => {
     const location = useLocation();
@@ -31,11 +33,31 @@ const ContactPage: React.FC = () => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Here you would typically send the data to a server or email service
-        console.log('Form submitted:', formData);
-        setSubmitted(true);
+        
+        try {
+            const emailData = {
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                company: formData.company,
+                service: formData.service,
+                message: formData.message
+            };
+
+            const emailSent = await sendQuoteEmail(emailData);
+            
+            if (emailSent) {
+                console.log('Contact form submitted successfully:', formData);
+                setSubmitted(true);
+            } else {
+                throw new Error('Failed to send email');
+            }
+        } catch (error) {
+            console.error('Error submitting contact form:', error);
+            alert('There was an error submitting your request. Please try again or call us directly at (817) 555-0100.');
+        }
     };
 
     return (
@@ -139,6 +161,17 @@ const ContactPage: React.FC = () => {
                             )}
                         </div>
                     </div>
+                </div>
+            </div>
+
+            {/* Appointment Booking Section */}
+            <div className="bg-gray-50 py-12">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-8">
+                        <h2 className="text-2xl font-bold text-gray-900 mb-4">Need a Property Survey?</h2>
+                        <p className="text-gray-600">Schedule a free consultation for a detailed, customized quote</p>
+                    </div>
+                    <AppointmentBooking className="max-w-md mx-auto" />
                 </div>
             </div>
 
