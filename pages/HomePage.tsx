@@ -21,9 +21,9 @@ const HeroSection = () => (
                 <NavLink to="/contact" className="btn-shine inline-flex items-center justify-center bg-brand-gold text-black font-semibold py-4 px-8 rounded-full text-lg shadow-lux hover:shadow-xl transition-all">
                     Request Private Quote
                 </NavLink>
-                <a href="#quote-calculator" className="inline-flex items-center justify-center border border-brand-gold text-brand-gold font-semibold py-4 px-8 rounded-full text-lg hover:bg-brand-gold hover:text-black transition-all">
+                <NavLink to="/contact#quote-calculator" className="inline-flex items-center justify-center border border-brand-gold text-brand-gold font-semibold py-4 px-8 rounded-full text-lg hover:bg-brand-gold hover:text-black transition-all">
                     Instant Estimate
-                </a>
+                </NavLink>
             </div>
             <div className="mt-12 flex items-center justify-center gap-6 text-sm text-gray-300">
                 <div className="flex items-center gap-2">
@@ -205,7 +205,7 @@ const FinalCTASection = () => (
         </h2>
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <NavLink to="/contact" className="btn-shine rounded-full bg-brand-gold px-6 py-3 text-sm font-semibold text-black shadow-lux hover:shadow-xl">Request Private Quote</NavLink>
-          <a href="#quote-calculator" className="rounded-full border border-brand-gold px-6 py-3 text-sm font-semibold text-brand-gold hover:bg-brand-gold hover:text-black">Instant Estimate</a>
+          <NavLink to="/contact#quote-calculator" className="rounded-full border border-brand-gold px-6 py-3 text-sm font-semibold text-brand-gold hover:bg-brand-gold hover:text-black">Instant Estimate</NavLink>
         </div>
       </div>
     </div>

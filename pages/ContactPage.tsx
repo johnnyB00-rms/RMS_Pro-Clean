@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { COMPANY_DETAILS } from '../constants.ts';
 import InstantQuoteCalculator from '../components/InstantQuoteCalculator.tsx';
 
 const ContactPage: React.FC = () => {
+    const location = useLocation();
     const [formData, setFormData] = useState({
         name: '',
         company: '',
@@ -12,6 +14,18 @@ const ContactPage: React.FC = () => {
         message: ''
     });
     const [submitted, setSubmitted] = useState(false);
+
+    // Handle scrolling to quote calculator if hash is present
+    useEffect(() => {
+        if (location.hash === '#quote-calculator') {
+            setTimeout(() => {
+                const element = document.getElementById('quote-calculator');
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }, 100);
+        }
+    }, [location.hash]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
