@@ -12,6 +12,7 @@ const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage.tsx'));
 const LocationsHubPage = lazy(() => import('./pages/LocationsHubPage.tsx'));
 const LocationDetailPage = lazy(() => import('./pages/LocationDetailPage.tsx'));
 const ContactPage = lazy(() => import('./pages/ContactPage.tsx'));
+const FAQPage = lazy(() => import('./pages/FAQPage.tsx'));
 const BlogPage = lazy(() => import('./pages/BlogPage.tsx'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage.tsx'));
 
@@ -36,6 +37,7 @@ const App: React.FC = () => {
                         <Route path="/locations" element={<LocationsHubPage />} />
                         <Route path="/locations/:locationId" element={<LocationDetailPage />} />
                         <Route path="/contact" element={<ContactPage />} />
+                        <Route path="/faq" element={<FAQPage />} />
                         <Route path="/blog" element={<BlogPage />} />
                         <Route path="*" element={<NotFoundPage />} />
                     </Routes>
