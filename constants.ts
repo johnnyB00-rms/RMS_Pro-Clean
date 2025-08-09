@@ -2,7 +2,7 @@ import type { Service, Testimonial, LocationInfo } from './types.ts';
 import { OfficeIcon, RestroomIcon, FloorIcon, CarpetIcon, WindowIcon, ConstructionIcon } from './components/Icons.tsx';
 
 export const COMPANY_DETAILS = {
-  name: "DFW ProClean Solutions",
+  name: "RMS Professional Cleaning Services",
   phone: "+1-817-555-0100",
   address: {
     street: "123 Commerce St", // For schema, not public display
@@ -145,7 +145,7 @@ export const SERVICES_DATA: Service[] = [
 
 export const TESTIMONIALS_DATA: Testimonial[] = [
     {
-        quote: "DFW ProClean Solutions has been a game-changer for our office. The team is always on time, professional, and their attention to detail is second to none. It's a relief to finally have a cleaning service we can count on.",
+        quote: "RMS Professional Cleaning Services has been a game-changer for our office. The team is always on time, professional, and their attention to detail is second to none. It's a relief to finally have a cleaning service we can count on.",
         name: "Sarah Johnson",
         company: "Innovate Tech, Fort Worth"
     },
@@ -155,7 +155,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
         company: "Arlington Logistics Group"
     },
     {
-        quote: "As a property manager, reliability is everything. DFW ProClean has never missed a cleaning and their communication is excellent. They are a true partner in maintaining our facilities.",
+        quote: "As a property manager, reliability is everything. RMS Professional Cleaning Services has never missed a cleaning and their communication is excellent. They are a true partner in maintaining our facilities.",
         name: "David Rodriguez",
         company: "Metroplex Properties"
     }
@@ -168,7 +168,7 @@ export const LOCATIONS_DATA: LocationInfo[] = [
         imageUrl: 'https://picsum.photos/seed/fortworth/800/600',
         pageContent: {
             title: 'Your Trusted Commercial Cleaning Partner in Fort Worth, TX',
-            introduction: 'DFW ProClean Solutions is proud to be a locally-owned business serving the vibrant commercial landscape of Fort Worth. We understand the unique needs of businesses here, from the bustling high-rises of Downtown to the specialized facilities in the Medical District. We offer reliable, high-quality cleaning services tailored to the heart of Cowtown.',
+            introduction: 'RMS Professional Cleaning Services is proud to be a locally-owned business serving the vibrant commercial landscape of Fort Worth. We understand the unique needs of businesses here, from the bustling high-rises of Downtown to the specialized facilities in the Medical District. We offer reliable, high-quality cleaning services tailored to the heart of Cowtown.',
             sections: [
                 {
                     title: "Office Cleaning for Downtown Fort Worth's Financial & Legal Hubs",
@@ -194,7 +194,7 @@ export const LOCATIONS_DATA: LocationInfo[] = [
         imageUrl: 'https://picsum.photos/seed/arlington/800/600',
         pageContent: {
             title: 'Professional Janitorial Services for Arlington, TX',
-            introduction: "As a major economic engine in the DFW metroplex, Arlington is home to world-class corporations, manufacturing leaders, and a thriving entertainment district. DFW ProClean Solutions offers robust and flexible cleaning plans designed to meet the diverse needs of Arlington's businesses.",
+            introduction: "As a major economic engine in the DFW metroplex, Arlington is home to world-class corporations, manufacturing leaders, and a thriving entertainment district. RMS Professional Cleaning Services offers robust and flexible cleaning plans designed to meet the diverse needs of Arlington's businesses.",
             sections: [
                 {
                     title: 'Janitorial Services for Businesses in the Arlington Entertainment District',

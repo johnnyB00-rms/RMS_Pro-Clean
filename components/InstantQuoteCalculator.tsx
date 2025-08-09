@@ -158,7 +158,7 @@ const InstantQuoteCalculator: React.FC = () => {
                             </div>
                             <h3 className="text-2xl font-bold text-white">Quote Submitted Successfully!</h3>
                             <p className="mt-4 text-lg text-gray-300">
-                                Thank you for your interest in DFW ProClean Solutions. Our team will review your requirements and contact you within 24 hours with a detailed proposal.
+                                Thank you for your interest in RMS Professional Cleaning Services. Our team will review your requirements and contact you within 24 hours with a detailed proposal.
                             </p>
                         </div>
                         

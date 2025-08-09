@@ -5,7 +5,7 @@ const AboutPage: React.FC = () => {
         <>
             <div className="bg-brand-blue-800">
                 <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 text-center text-white">
-                    <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">About DFW ProClean Solutions</h1>
+                    <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">About RMS Professional Cleaning Services</h1>
                     <p className="mt-6 max-w-2xl mx-auto text-xl text-brand-blue-100">Your Local, Trusted Cleaning Partner.</p>
                 </div>
             </div>
@@ -20,7 +20,7 @@ const AboutPage: React.FC = () => {
                     </div>
                     <div className="mt-8 prose prose-indigo prose-lg text-gray-500 mx-auto">
                         <p>
-                            DFW ProClean Solutions was founded on a simple but powerful idea: that businesses in the Dallas-Fort Worth area deserve a commercial cleaning service that is reliable, professional, and transparent. We saw a gap between the impersonal service of large national franchises and the inconsistent quality of smaller operators. We knew we could do better.
+                            RMS Professional Cleaning Services was founded on a simple but powerful idea: that businesses in the Dallas-Fort Worth area deserve a commercial cleaning service that is reliable, professional, and transparent. We saw a gap between the impersonal service of large national franchises and the inconsistent quality of smaller operators. We knew we could do better.
                         </p>
                         <p>
                             As a <strong className="text-gray-900">family-owned and operated business</strong>, our roots are firmly planted in the local community. We're not just a service provider; we're your neighbors. This local authenticity is at the core of everything we do. When you partner with us, you're not dealing with a call center or a middleman. You're dealing directly with a team that is invested in your satisfaction and in the community we share.
@@ -35,7 +35,7 @@ const AboutPage: React.FC = () => {
                             <li><strong>Transparency:</strong> From our detailed checklists to our upfront pricing, we believe in clear communication. With us, there are no hidden fees or surprises.</li>
                         </ul>
                         <p>
-                            Our goal is to build long-term partnerships with our clients based on trust and exceptional results. We are proud to serve Fort Worth, Arlington, and the surrounding DFW communities, and we look forward to showing you the DFW ProClean Solutions difference.
+                            Our goal is to build long-term partnerships with our clients based on trust and exceptional results. We are proud to serve Fort Worth, Arlington, and the surrounding DFW communities, and we look forward to showing you the RMS Professional Cleaning Services difference.
                         </p>
                     </div>
                 </div>
