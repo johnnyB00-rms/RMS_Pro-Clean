@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { Header } from './components/Header.tsx';
 import { Footer } from './components/Footer.tsx';
 import SchemaMarkup from './components/SchemaMarkup.tsx';
@@ -41,6 +42,7 @@ const App: React.FC = () => {
                 </Suspense>
             </main>
             <Footer />
+            <Analytics />
         </HashRouter>
     );
 };
