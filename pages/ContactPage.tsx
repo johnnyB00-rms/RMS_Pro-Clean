@@ -128,6 +128,15 @@ const ContactPage: React.FC = () => {
                 </div>
             </div>
 
+            {/* ElevenLabs Conversational AI Widget */}
+            <div className="bg-white py-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-2xl font-bold text-gray-900 mb-4">Have Questions? Chat with Our AI Assistant</h2>
+                    <p className="text-gray-600 mb-6">Get instant answers about our services, pricing, and availability</p>
+                    <elevenlabs-convai agent-id="drphXrzOk5gaYjMxRo0N"></elevenlabs-convai>
+                </div>
+            </div>
+
             {/* Add the instant quote calculator */}
             <InstantQuoteCalculator />
         </div>

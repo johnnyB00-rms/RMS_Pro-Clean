@@ -216,6 +216,10 @@ const InstantQuoteCalculator: React.FC = () => {
                     <p className="text-xl text-white/90 max-w-3xl mx-auto">
                         Tell us about your property and cleaning needs, and we'll provide an instant estimate for your commercial cleaning services.
                     </p>
+                    <div className="mt-6">
+                        <p className="text-lg text-white/80 mb-4">Need help? Chat with our AI assistant for instant answers!</p>
+                        <elevenlabs-convai agent-id="drphXrzOk5gaYjMxRo0N"></elevenlabs-convai>
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-white">
