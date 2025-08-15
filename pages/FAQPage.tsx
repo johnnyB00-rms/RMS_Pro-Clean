@@ -109,8 +109,8 @@ const FAQPage: React.FC = () => {
                         Can't find what you're looking for? Contact us directly for personalized answers about your commercial cleaning needs.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <a href="tel:+1-817-555-0100" className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-green-500 hover:bg-opacity-90">
-                            Call (817) 555-0100
+                        <a href="tel:+1-409-728-5083" className="inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-green-500 hover:bg-opacity-90">
+                            Call (409) 728-5083
                         </a>
                         <a href="mailto:cgunner@rmsproclean.com" className="inline-flex items-center justify-center px-6 py-3 border border-brand-blue-600 rounded-md shadow-sm text-base font-medium text-brand-blue-600 bg-white hover:bg-gray-50">
                             Email Us

@@ -3,7 +3,7 @@ import { OfficeIcon, RestroomIcon, FloorIcon, CarpetIcon, WindowIcon, Constructi
 
 export const COMPANY_DETAILS = {
   name: "RMS Professional Cleaning Services",
-  phone: "+1-817-555-0100",
+  phone: "+1-409-728-5083",
   address: {
     street: "123 Commerce St", // For schema, not public display
     locality: "Fort Worth",

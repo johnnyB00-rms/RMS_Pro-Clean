@@ -63,7 +63,7 @@ export const sendTestEmail = async (): Promise<boolean> => {
   const testData: EmailData = {
     name: 'Test User',
     email: 'test@example.com',
-    phone: '(817) 555-0123',
+    phone: '(409) 728-5083',
     company: 'Test Company',
     services: ['general-office-cleaning', 'restroom-sanitation'],
     squareFootage: 2000,

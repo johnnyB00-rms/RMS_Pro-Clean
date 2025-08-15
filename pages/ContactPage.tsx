@@ -56,7 +56,7 @@ const ContactPage: React.FC = () => {
             }
         } catch (error) {
             console.error('Error submitting contact form:', error);
-            alert('There was an error submitting your request. Please try again or call us directly at (817) 555-0100.');
+            alert('There was an error submitting your request. Please try again or call us directly at (409) 728-5083.');
         }
     };
 

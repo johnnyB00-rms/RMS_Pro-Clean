@@ -157,7 +157,7 @@ const InstantQuoteCalculator: React.FC = () => {
             }
         } catch (error) {
             console.error('Error submitting quote:', error);
-            alert('There was an error submitting your quote. Please try again or call us directly at (817) 555-0100.');
+            alert('There was an error submitting your quote. Please try again or call us directly at (409) 728-5083.');
         } finally {
             setIsSubmitting(false);
         }
@@ -306,7 +306,7 @@ const InstantQuoteCalculator: React.FC = () => {
                                         value={formData.phone}
                                         onChange={handleInputChange}
                                         className="w-full px-4 py-3 border border-brand-gold/30 bg-black/30 text-white placeholder-gray-400 rounded-lg focus:ring-2 focus:ring-brand-gold focus:border-transparent"
-                                        placeholder="(817) 555-0100"
+                                        placeholder="(409) 728-5083"
                                     />
                                 </div>
                             </div>
